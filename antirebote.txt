@@ -1,0 +1,69 @@
+const int boton = 2;
+
+enum Estado_Boton{
+  BOTON_UP,
+  BOTON_FALLING,
+  BOTON_RISING,
+  BOTON_DOWN
+};
+
+Estado_Boton estado_b = BOTON_UP;
+const int t_rebote = 40;
+unsigned long t_anterior = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(2, INPUT_PULLUP);
+}
+
+void loop() {
+  
+  switch (estado_b) {
+  case BOTON_UP:
+  t_anterior = millis();
+    if(digitalRead(2) == LOW) {
+      estado_b = BOTON_FALLING;
+    }
+  break;
+
+  case BOTON_FALLING:
+    if(millis() - t_anterior >= t_rebote) {
+      if(digitalRead(2) == LOW){
+        estado_b = BOTON_DOWN;
+        presionado();
+      }
+      else{
+        estado_b = BOTON_UP;
+      }
+    }
+  break;
+
+  case BOTON_DOWN:
+  t_anterior = millis();
+    if(digitalRead(2) == HIGH){
+      estado_b = BOTON_RISING;
+    }
+  break;
+
+  case BOTON_RISING:
+    if(millis() - t_anterior >= t_rebote){
+      if(digitalRead(2) == HIGH){
+        estado_b = BOTON_UP;
+        liberado();
+      }
+      else{
+        estado_b = BOTON_DOWN;
+      }
+    }
+  break;
+  }
+}
+
+
+void presionado() {
+  Serial.println("Pulsador presionado");
+}
+
+void liberado() {
+  Serial.println("Pulsador liberado");
+}

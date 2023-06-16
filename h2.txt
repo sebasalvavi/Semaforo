@@ -1,0 +1,6 @@
+void teclas_ini();
+void teclas_act();
+bool buttonPressed(uint8_t tecla);
+bool buttonReleased(uint8_t tecla);
+//void buttonPressed(int16_t tecla);
+//void buttonReleased(int16_t tecla);

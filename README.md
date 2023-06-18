@@ -1,6 +1,6 @@
 # Control Digital : Práctica 2 
 
-## Máquina de estados del antirebote
+## 1) Anti rebote
 Para el desarrollo de la programación del anteirebote se define primero la máquina de estados que se muestra en la siguiente figura:
 
 [![estados-anti.png](https://i.postimg.cc/CKBRGvnB/estados-anti.png)](https://postimg.cc/DWhfFPgn)
@@ -13,7 +13,10 @@ Los cambios entre estados ocurren cuando:
 
 La programación respectiva a este item se encuentra en el directorio 2.
 
-## Máquina de estados del semáforo
+
+## 2) Control de 2 teclas
+
+## 3) Semáforo
 
 Para el desarrollo de la programación del semáforo se define tres modos de operación, mismos que se muestran en la siguiente figura:
 
@@ -27,4 +30,5 @@ Las acciones en cada modo son:
 - Alarma: Led rojo intermitente cada 1s
 
 
-Los 3 primeros codigos del trabajo 2 de programacion en mircos de control digital
+## 4) Comunicación UART
+

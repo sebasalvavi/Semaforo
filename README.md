@@ -43,4 +43,4 @@ La comunicación UART informa el estado tanto de las teclas como del semáforo. 
 - uart_antirebote(): Recibe como parámetros el identificador tipo char y el estado actual tipo enum de la tecla. Muestra estos datos en pantalla.
 - uart_semaforo(): Recibe el estado actual tipo enum del semáforo, es decir el modo de operación, muestra este dato en pantalla.
 
-[Desarrollo actividad 4]
+[Desarrollo actividad 4](https://github.com/sebasalvavi/Semaforo/tree/main/4)

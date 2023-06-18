@@ -5,7 +5,7 @@ Integrantes: Sebastián Álvarez - Henry Maldonado
 Guía de práctica: [Guía](https://github.com/sebasalvavi/Semaforo/blob/main/PdM_Ejercicio_2.pdf)
 
 ## 1) Anti rebote
-Para el desarrollo de la programación del anteirebote se define primero la máquina de estados que se muestra en la siguiente figura:
+Para el desarrollo de la programación del anti rebote se define primero la máquina de estados que se muestra en la siguiente figura:
 
 [![estados-anti.png](https://i.postimg.cc/CKBRGvnB/estados-anti.png)](https://postimg.cc/DWhfFPgn)
 

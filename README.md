@@ -5,7 +5,7 @@ Para el desarrollo de la programación del anteirebote se define primero la máq
 
 [![estados-anti.png](https://i.postimg.cc/CKBRGvnB/estados-anti.png)](https://postimg.cc/DWhfFPgn)
 
-Los cambios de estados ocurren cuando:
+Los cambios entre estados ocurren cuando:
 - El estado inicial es Button Up, cuando se presiona el botón pasa al estado Button Falling.
 - En el estado Falling espera un tiempo (variable t_rebote) y vuelve a leer el pulsador, si el botón sigue presionado pasa al estado Down y llama a la función buttonPressed(), la cual indica que el botón sí ha sido presionado, caso contrario vulve al estado UP.
 - Si está en el estado Down y se libera el botón, pasa al estado Rising.
@@ -14,6 +14,12 @@ Los cambios de estados ocurren cuando:
 La programación respectiva a este item se encuentra en el directorio 2.
 
 ## Máquina de estados del semáforo
-Para el desarrollo de la programación del semáforo se define primero la máquina de estados que se muestra en la siguiente figura:
+
+Para el desarrollo de la programación del semáforo se define tres modos de operación, mismos que se muestran en la siguiente figura:
+
+[![modos.png](https://i.postimg.cc/Y2YpwvWW/modos.png)](https://postimg.cc/G930FhzL)
+
+El cambio entre los modos de operación ocurren al presionar uno de los dos botones disponibles.
+
 
 Los 3 primeros codigos del trabajo 2 de programacion en mircos de control digital

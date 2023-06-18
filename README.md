@@ -1,5 +1,8 @@
 # Control Digital : Práctica 2 
 
+Integrantes: Sebastián Álvarez - Henry Maldonado
+Guía de práctica: [Guía](https://github.com/sebasalvavi/Semaforo/blob/main/PdM_Ejercicio_2.pdf)
+
 ## 1) Anti rebote
 Para el desarrollo de la programación del anteirebote se define primero la máquina de estados que se muestra en la siguiente figura:
 

@@ -19,7 +19,12 @@ Para el desarrollo de la programación del semáforo se define tres modos de ope
 
 [![modos.png](https://i.postimg.cc/Y2YpwvWW/modos.png)](https://postimg.cc/G930FhzL)
 
-El cambio entre los modos de operación ocurren al presionar uno de los dos botones disponibles.
+El cambio entre los modos de operación ocurre al presionar uno de los dos botones disponibles.
+
+Las acciones en cada modo son:
+- Normal: Los leds siguen la secuencia: verde 3s, verde y amarillo 500ms, rojo 2s iterativamente. Los tiempos de la secuencia son modificados al presionar uno de los dos botones, el cual variará la velocidad entre 0.5x, 1x y 2x.
+- Desconectado: Led amarillo intermitente cada 500ms.
+- Alarma: Led rojo intermitente cada 1s
 
 
 Los 3 primeros codigos del trabajo 2 de programacion en mircos de control digital

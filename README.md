@@ -11,6 +11,8 @@ Los cambios de estados ocurren cuando:
 - Si está en el estado Down y se libera el botón, pasa al estado Rising.
 - En el estado Rising espera un tiempo (variable t_rebote) y vuelve a leer el pulsador, si este está liberado pasa al estado Up y llama a la función buttonReleased(), indicando que el botón ha sido liberado, caso contrario vuelve al estado Down.
 
+La programación respectiva a este item se encuentra en el directorio 2.
+
 ## Máquina de estados del semáforo
 Para el desarrollo de la programación del semáforo se define primero la máquina de estados que se muestra en la siguiente figura:
 

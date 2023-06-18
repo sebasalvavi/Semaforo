@@ -38,7 +38,7 @@ Las acciones en cada modo son:
 
 
 ## 4) Comunicación UART
-La comunicación UART informa el estado tanto de las teclas como del semáforo. Este módulo usa las librerías de **pulsantes.h** y **semafor.h** de forma que se tiene las mismas variables tipo **enum**, es decir se tiene los mismos estados. Se implementa dos funciones de información:
+La comunicación UART informa el estado tanto de las teclas como del semáforo. Este módulo usa las librerías de **pulsantes.h** y **semafor.h** de forma que se tiene las mismas variables tipo **enum**, es decir se tiene los mismos estados, de forma que si existen más o menos estados en las librerías este módulo también las tendrá. Se implementa dos funciones de información:
 - uart_antirebote(): Recibe como parámetros el identificador tipo char y el estado actual tipo enum de la tecla. Muestra estos datos en pantalla.
 - uart_semaforo(): Recibe el estado actual tipo enum del semáforo, es decir el modo de operación, muestra este dato en pantalla.
 

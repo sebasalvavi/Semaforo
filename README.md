@@ -36,9 +36,11 @@ Para el desarrollo de la programación del semáforo se define tres modos de ope
 El cambio entre los modos de operación ocurre al presionar uno de los dos botones disponibles, para esto ya se implementa el anti rebote en cada uno de los botones.
 
 Las acciones en cada modo son:
-- Normal: Los leds siguen la secuencia: verde 3s, verde y amarillo 500ms, rojo 2s iterativamente. Los tiempos de la secuencia son modificados al presionar uno de los dos botones, el cual variará la velocidad entre 0.5x, 1x y 2x.
+- Normal: Los leds siguen la secuencia: verde 3s, verde y amarillo 500ms, rojo 2s iterativamente. Los tiempos de la secuencia son modificados al presionar uno de los dos botones, el cual variará la velocidad entre 0.5x, 1x y 2x, vector **velocidades[]**. Este es el estado inicial del semáforo.
 - Desconectado: Led amarillo intermitente cada 500ms.
 - Alarma: Led rojo intermitente cada 1s
+
+Se creó una función **retraso()** para facilitar el cálculo de la diferentecia entre tiempos, ya que esta implementación es requerida en varias ocaciones.
 
 [Desarrollo actividad 3](https://github.com/sebasalvavi/Semaforo/tree/main/3)
 

@@ -15,6 +15,7 @@ La programación respectiva a este item se encuentra en el directorio 2.
 
 
 ## 2) Control de 2 teclas
+Para este programa se define la misma máquina de estados que la realizada en el ítem anterior. Para escalar a dos o más botones se crea una estructura \textbf{VTecla} que contiene la tecla, el delay para considerar el cambio de estado y un tipo de dato \textbf{enum} que permite usar una sola máquina de estados para los distintos botones. Para esta práctica se plantearon dos botones: \texttt{tecla1} y \texttt{tecla1}
 
 ## 3) Semáforo
 
@@ -22,7 +23,7 @@ Para el desarrollo de la programación del semáforo se define tres modos de ope
 
 [![modos.png](https://i.postimg.cc/Y2YpwvWW/modos.png)](https://postimg.cc/G930FhzL)
 
-El cambio entre los modos de operación ocurre al presionar uno de los dos botones disponibles.
+El cambio entre los modos de operación ocurre al presionar uno de los dos botones disponibles, para esto ya se implementa el anti rebote en cada uno de los botones.
 
 Las acciones en cada modo son:
 - Normal: Los leds siguen la secuencia: verde 3s, verde y amarillo 500ms, rojo 2s iterativamente. Los tiempos de la secuencia son modificados al presionar uno de los dos botones, el cual variará la velocidad entre 0.5x, 1x y 2x.

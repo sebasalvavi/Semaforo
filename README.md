@@ -11,6 +11,7 @@ Los cambios entre estados ocurren cuando:
 - Si está en el estado Down y se libera el botón, pasa al estado Rising.
 - En el estado Rising espera un tiempo (variable t_rebote) y vuelve a leer el pulsador, si este está liberado pasa al estado Up y llama a la función buttonReleased(), indicando que el botón ha sido liberado, caso contrario vuelve al estado Down.
 
+[Desarrollo actividad 1]([ruta/al/directorio](https://github.com/sebasalvavi/Semaforo/tree/main/1/Antirebote))
 
 ## 2) Control de 2 teclas
 Para este programa se define la misma máquina de estados que la realizada en el ítem anterior. Para escalar a dos o más botones se crea una estructura **VTecla** que contiene:

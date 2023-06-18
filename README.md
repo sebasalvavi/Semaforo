@@ -40,7 +40,7 @@ Las acciones en cada modo son:
 - Desconectado: Led amarillo intermitente cada 500ms.
 - Alarma: Led rojo intermitente cada 1s
 
-Se creó una función **retraso()**en el archivo **pulsantes.cpp** para facilitar el cálculo de la diferentecia entre tiempos, ya que esta implementación es requerida en varias ocaciones.
+Se creó una función **retraso()** en el archivo **pulsantes.cpp** para facilitar el cálculo de la diferentecia entre tiempos, ya que esta implementación es requerida en varias ocaciones.
 
 [Desarrollo actividad 3](https://github.com/sebasalvavi/Semaforo/tree/main/3)
 

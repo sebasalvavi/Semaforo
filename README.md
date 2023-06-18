@@ -1,6 +1,7 @@
 # Control Digital : Práctica 2 
 
-Integrantes: Sebastián Álvarez - Henry Maldonado
+Integrantes: Sebastián Álvarez - Henry 
+
 Guía de práctica: [Guía](https://github.com/sebasalvavi/Semaforo/blob/main/PdM_Ejercicio_2.pdf)
 
 ## 1) Anti rebote

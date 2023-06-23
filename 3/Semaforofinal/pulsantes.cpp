@@ -2,6 +2,8 @@
 #include "pulsantes.h"
 #include "semaforo.h"
 
+unsigned long t_antpuls= 0;
+
 VTecla tecla1 = {'1', 40, BOTON_UP};
 VTecla tecla2 = {'2', 40, BOTON_UP};
 
@@ -10,11 +12,12 @@ void teclas_act(VTecla& tecla, int boton) {
   switch (tecla.estadob) {
     case BOTON_UP:
       if (digitalRead(boton) == LOW) {
-        tecla.estadob = BOTON_FALLING;}
+        tecla.estadob = BOTON_FALLING;
+        t_antpuls= millis();}
       break;
 
     case BOTON_FALLING:
-      if (retraso(tecla.delay)) {
+      if (millis() - t_antpuls>= tecla.delay) {
         if (digitalRead(boton) == LOW) {
           tecla.estadob = BOTON_DOWN;
         } else {
@@ -24,11 +27,12 @@ void teclas_act(VTecla& tecla, int boton) {
 
     case BOTON_DOWN:
       if (digitalRead(boton) == HIGH) {
-        tecla.estadob = BOTON_RISING;}
+        tecla.estadob = BOTON_RISING;
+        t_antpuls= millis();}
       break;
 
     case BOTON_RISING:
-      if (retraso(tecla.delay)) {
+      if (millis() - t_antpuls>= tecla.delay) {
         if (digitalRead(boton) == HIGH) {
           tecla.estadob = BOTON_UP;
         } else {

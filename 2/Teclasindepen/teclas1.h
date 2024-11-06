@@ -1,6 +1,6 @@
-//Documentacion 
-//Segunda Tarea
-//Teclas actuando asincronica e independientemente
+// Creado por: Sebastian Alvarez
+// Para un semaforo con arduino.
+// Segunda Tarea: Teclas actuando asincronica e independientemente
 #include <Arduino.h>
 
 extern int boton1;

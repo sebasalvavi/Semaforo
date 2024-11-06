@@ -1,6 +1,8 @@
+// Creado por: Sebastian Alvarez
+// Para un semaforo con arduino.
+// Primera tarea: Tecla antirebote
 #include <Arduino.h>
 #include "teclas.h"
-
 //Teclas y leds
 const int boton1 = 11;
 const int boton2 = 10;

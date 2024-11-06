@@ -1,3 +1,6 @@
+//Documentacion 
+//Segunda Tarea
+//Teclas actuando asincronica e independientemente
 #include <Arduino.h>
 
 extern int boton1;

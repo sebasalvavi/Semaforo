@@ -1,3 +1,6 @@
+//Documentacion 
+//Segunda Tarea
+//Teclas actuando asincronica e independientemente
 #include "teclas1.h"
 
 void setup() {

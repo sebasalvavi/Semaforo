@@ -1,1 +1,1 @@
-//**Esto es una prueba del uso de Git y una prueba en la rama Smart bracnh */
+//**Esto es una prueba del uso de Git y una prueba en la rama SPA bracnh */

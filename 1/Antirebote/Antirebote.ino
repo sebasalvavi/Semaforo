@@ -1,6 +1,7 @@
 // Creado por: Sebastian Alvarez
 // Para un semaforo con arduino.
 // Primera tarea: Tecla antirebote
+// ... github
 #include "teclas.h"
 
 
